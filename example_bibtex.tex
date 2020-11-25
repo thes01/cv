@@ -1,0 +1,30 @@
+% Začátek preambule.
+\documentclass{article}
+\usepackage[resetfonts]{cmap}
+\usepackage{lmodern}
+\usepackage[czech]{babel}
+\usepackage[latin2]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber,
+            style=alphabetic,
+            maxnames=5,
+            alldates=iso8601]{biblatex} % Seznam literatury bude vygenerován 
+                                        % BibLaTeXem.
+\addbibresource{biblio.bib} % Seznam literatury bude vygenerován 
+                                         % ze zdrojů umístěných v souboru 
+                                         % databaze-literatury.bib.
+% Konec preambule.
+
+% Začátek dokumentu.
+\begin{document}
+\section*{Citace s~Bib\TeX em}
+    Odkaz na literaturu vytvoříme příkazem \verb|\cite{návěští}|. Výsledek pak 
+    vypadá např. takto:~\cite{inbook-full} Odkaz na další 
+    knihu~\cite{article-full} je automaticky číslován. K~odkazu můžeme přidat 
+    i~nějakou poznámku, např.  číslo strany.~\cite[strana 26]{chicago-manual} 
+    Citovat můžeme i~více zdrojů najednou.~\cite{inbook-full, article-full}
+
+\printbibliography[heading=bibintoc] % Vysadí seznam z dokumentu odkazovaných 
+                                     % citací.
+\end{document}
+% Konec dokumentu.
