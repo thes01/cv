@@ -9,16 +9,19 @@
             style=alphabetic,
             maxnames=5,
             seconds=true,
-            alldates=iso8601]{biblatex} % Seznam literatury bude vygenerován 
-                                        % BibLaTeXem.
-\addbibresource{biblio.bib} % Seznam literatury bude vygenerován 
-                                         % ze zdrojù umístìných v souboru 
-                                         % databaze-literatury.bib.
+            alldates=iso8601]{biblatex}
+\addbibresource{biblio.bib}
+
+\usepackage{makeidx}
+\makeindex
 % Konec preambule.
 
 % Zaèátek dokumentu.
 \begin{document}
 \section{Citace s~Bib\TeX em}
-    Odkaz na literaturu vytvoøime prikazem \cite{lynch2005where}
+    Odkaz na literaturu\index{literatura} vytvoøime prikazem \cite{lynch2005where} 
+    Ahoj, tady svìts
+
+    \printindex
 \end{document}
 % Konec dokumentu.
