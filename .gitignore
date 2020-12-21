@@ -1,0 +1,8 @@
+*.aux
+*.bcf
+*.dvi
+*.pdf
+*.fdb_latexmk
+*.fls
+*.log
+*.run.xml
