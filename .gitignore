@@ -6,3 +6,10 @@
 *.fls
 *.log
 *.run.xml
+*.bbl
+*.blg
+*.idx
+*.ind
+*.out
+*.out.ps
+*.ilg
