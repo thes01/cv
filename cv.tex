@@ -8,6 +8,7 @@
 \usepackage{scrextend}
 \usepackage{pgfkeys}
 \usepackage{etoolbox}
+\usepackage{hyperref}
 \renewcommand{\ttdefault}{phv} % Uses Helvetica instead of fixed width font
 
 
@@ -15,22 +16,74 @@
 % \ecvaddress[Studlov 160]{756 12, Ceska republika}
 \ecvtelephone{+420 123 456 789}
 \ecvemail{\href{mailto:469343@mail.muni.cz}{469343@mail.muni.cz}}
-\ecvdateofbirth{12. března 1918 }
+\ecvdateofbirth{6. srpna 1998}
 \ecvpicture[width=3.5cm]{tojsemja.png}
 \ecvafterpicture{\ecvspace{-4.5cm}}
+
+\renewcommand{\labelitemi}{$\bullet$}
 
 \begin{document}
 \selectlanguage{czech}
 \begin{europecv}
      
 \ecvpersonalinfo[20pt]
+\ecvitem{Github}{\url{https://github.com/thes01}}
 
-\pdfbookmark{Academic appointments}{Academic appointments}
+% \pdfbookmark{Academic appointments}{Academic appointments}
 \section{Vzdělání}
 
-\ecvitem{červen 2020 -- březen 2021}{\textbf{Associate Professor} at University of XX, YY, Department of ZZ.}
- 
+% \ecvitem{} {
+%     zahraniční pobyty:
+%     \begin{itemize}
+%         \item 2018/2019: Erasmus+, Technische Universität Dresden, Německo
+%         \item 2016: složení zkoušky FCE
+%     \end{itemize} 
+% }
+\ecvitem{leden 2018 -- červen 2018}{\textbf{Polyglot language school, Brno}, kurz angličtina C1}
+\ecvitem{červen 2017 -- aktuálně}{\textbf{Fakulta Informatiky MU Brno}, bakalářské studium}
+\ecvitem{září 2009 -- květen 2017}{\textbf{Gymnázium Valašské Klobouky}}
+\ecvitem{}{
+    \ecvspace{-1.1cm}
+    \begin{itemize}
+        \item 2017: úspěšný řešitel krajského kola Matematické olympiády
+    \end{itemize}  
+    \ecvspace{-1cm}
+}
+\section{Zahraniční pobyty}
+\ecvitem{březen 2019}{\textbf{Ho Chi Minh City, Vietnam}, AIESEC Global Volunteer, výuka angličtiny}
+\ecvitem{říjen 2018 -- srpen 2019}{\textbf{Technische Universität Dresden}, Erasmus+}
+\ecvitem{srpen 2015}{\textbf{Richard Language College, Bournemouth UK}, intenzivní jazykový kurz}
 
+\section{Pracovní zkušenosti}
+\ecvitem{září 2019 -- aktuálně}{
+    Softíci s.r.o, návrh a implementace BE
+}
+\ecvitem{}{
+    \textit{PHP, CSS, JS, Laravel}
+}
+\ecvitem{únor 2016 -- únor 2017}{
+    David Křenek, návrh a implementace BE, kódování FE webových stránek
+}
+\ecvitem[14pt]{září 2014 -- prosinec 2014}{
+    Pavel Ďulík, kódování webové stránky www.mi4.cz
+}
+
+\ecvitem{\textbf{Vedlejší aktivity a zájmy}}{
+    Zpěvník pro scholy -- vývoj BE a organizace projektu, \href{https://zpevnik.proscholy.cz}{zpevnik.proscholy.cz}
+}
+\ecvitem{}{
+    Adorare (hudební skupina) -- zpěv, vývoj webu \href{http://adorare.cz}{adorare.cz}, přepis not
+}
+\ecvitem[14pt]{}{
+    SBM (orchestr + sbor) -- hra na trumpetu
+}
+\ecvitem[5pt]{\large Mateřský jazyk}{čeština}
+\ecvitem[5pt]{\large Další jazyky:}{}
+\ecvlanguageheader{(*)}
+\ecvlanguage{angličtina (FCE 2016)}{C1}{C1}{B2}{B2}{C1}
+\ecvlanguage{němčina}{B2}{B2}{B2}{B2}{B2}
+\ecvlanguage{francouzština}{A1}{A1}{A1}{A1}{A1}
+\ecvlanguagefooter[10pt]{(*)}
 
 
 \end{europecv}
