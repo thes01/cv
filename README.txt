@@ -1,0 +1,1 @@
+GIT repository available at https://gitlab.fi.muni.cz/xsery/xsery_pb029_texzapocet
